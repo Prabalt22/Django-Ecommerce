@@ -84,7 +84,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': DB_PASSWORD_YO,
         'HOST': 'shinkansen.proxy.rlwy.net',
-        'PORT': '5432',
+        'PORT': '32722',
     }
 }
 
