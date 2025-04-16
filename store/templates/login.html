@@ -1,0 +1,42 @@
+{% extends 'base.html' %} {% block content %}
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center text-white">
+      <h1 class="display-4 fw-bolder">Login...</h1>
+      <p class="lead fw-normal text-white-50 mb-0">
+        Welcome to Prabal Ecommerse
+      </p>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <center>
+      <br /><br />
+      <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your name"
+            name="username"
+          />
+        </div>
+        <br /><br />
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Enter your password"
+          />
+        </div>
+        <br /><br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br /><br />
+    </center>
+  </div>
+</div>
+{% endblock %}
